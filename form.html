@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post" action="form.php">
+        <fieldset>
+            <legend>User Details</legend>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Order details</legend>
+            <label for="flavor">Flavor:</label>
+            <select name="flavor" id="flavor">
+                <option value="ch">Chocolate</option>
+                <option value="van">Vanilia</option>
+                <option value="str">Strawberry</option>
+            </select>
+            <br>
+            <label>Toppings:</label>
+            <input type="checkbox" name="spr" value="yes">
+            <label for="spr">Sprinkles</label>
+            <input type="checkbox" name="nuts" value="yes">
+            <label for="nuts">Nuts</label>
+            <br>
+            <label>Cup or cone:</label>
+            <input type="radio" name="cupcone" id="cup">
+            <label for="cup">Cup</label>
+            <input type="radio" name="cupcone" id="cone">
+            <label for="cone">Cone</label>
+            <br>
+            <label for="comment">Comment</label> <br>
+            <textarea name="comment" id="comment" cols="20" rows="10"></textarea>
+            <br>
+            <label for="submit">Submit</label>
+            <input type="submit" value="Place Order" id="submit">
+            <label for="reset">reset</label>
+            <input type="reset" value="Reset Order" id="resets">
+        </fieldset>
+    </form>
+</body>
+
+</html>

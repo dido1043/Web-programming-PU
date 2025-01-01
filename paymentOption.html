@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Payment form</h1>
+    <form action="form.php" method="post">
+        <h3 style="color: red;">All fields are <strong>REQUIRED</strong></h3>
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" required><br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" required><br>
+        <label for="address">Street Address:</label>
+        <input type="text" name="address" id="address" required><br>
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city" required><br>
+        <label for="state">State:</label>
+        <input type="text" name="state" id="state" required><br>
+        <label for="zip">ZIP/Postal code:</label>
+        <input type="text" name="zip" id="zip" required><br>
+        <label required>Credit card</label><br>
+        <input type="radio" name="cc" id="mc"> 
+        <label for="mc">Master Card</label><br>
+        <input type="radio" name="cc" id="visa">
+        <label for="visa">VISA</label><br>
+        <input type="radio" name="cc" id="discover">
+        <label for="discover">Discover</label><br>
+
+        <label for="cardNum">Credit Card Number:</label>
+        <input type="text" name="cardNum" id="cardNum" required><br>
+
+        <label for="expDate">Expiration Date</label>
+        <select name="month" id="month" required>
+            <option>--month--</option>
+            <option value="jan">January</option>
+            <option value="feb">February</option>
+            <option value="mar">March</option>
+            <option value="apr">April</option>
+            <option value="may">May</option>
+            <option value="jun">June</option>
+            <option value="jul">July</option>
+            <option value="aug">August</option>
+            <option value="sept">September</option>
+            <option value="oct">October</option>
+            <option value="nov">November</option>
+            <option value="dec">December</option>
+        </select>
+        <select name="year" id="year" required>
+            <option>--year--</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+        </select><br>
+
+        <label for="sn">Special notes</label><br>
+        <textarea name="sn" id="sn" rows="8" cols="30" placeholder="Enter notes here...."></textarea>
+        <br>
+        <input type="submit" value="Submit payment" >
+        <input type="reset" value="Reset form">
+    </form>
+</body>
+</html>
