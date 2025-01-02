@@ -1,0 +1,43 @@
+@media screen and (min-width:640px) and (max-width: 780px) {
+    #wrapper{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    header>h1 a{
+        padding: 10px 10px;
+        display: flex;
+        gap: 20%;
+        text-decoration: none;
+        color:black;
+    }
+    main{
+        flex-direction: column;
+        width: 100%;
+    }
+    main>.left{
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 100%;
+
+    }
+    main>section{
+        margin-top: 10px;
+        width: 100%;
+    }
+    main>section>article{
+        width: 100%;
+        padding: 0;
+        height: 300px;
+        gap: 10px;
+    }
+    main>section>article>div{
+        width: 100%;
+        gap: 10px;
+    }
+    main>.right{
+        margin-top: 10px;
+        width: 100%;
+    }
+}
